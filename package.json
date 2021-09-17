@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./dist",
-    "hbscopy":"ncp ./src/views/ ./dist/views",
+    "hbscopy": "ncp ./src/views/ ./dist/views",
     "dev": "ts-node src/index.ts",
-    "build": "npm run clean && tsc && npm run hbscopy"
+    "build": "yarn run clean && tsc && npm run hbscopy && yarn run dev"
   },
   "keywords": [],
   "author": "",
