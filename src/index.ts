@@ -1,5 +1,6 @@
-import application from './app'
-import database from './database'
+import application from './app';
+import database from './database';
+require('dotenv').config()
 
 
 //Starting server

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export default async function connect() {
   try {
-    await mongoose.connect("mongodb://localhost:27017/ts-app", {
+    await mongoose.connect(`${process.env.MONGODB_URI}`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
